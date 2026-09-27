@@ -70,6 +70,84 @@ ONG3/
 │   ├── app.js
 │   └── script.js
 └── README.md
+```
+
+A pasta **html** contém os arquivos responsáveis pela estrutura das páginas.
+
+A pasta **css** contém os estilos e o Design System da aplicação.
+
+A pasta **imagens** armazena os recursos visuais utilizados no projeto.
+
+A pasta **js** contém os arquivos responsáveis pelas funcionalidades e comportamentos interativos da aplicação.
+
+## Design System
+
+O projeto utiliza um Design System desenvolvido com **variáveis CSS**, permitindo maior organização e padronização dos elementos visuais.
+
+### Cores
+
+Foram definidas variáveis para cores primárias, secundárias, acentos, textos, fundo, bordas, sucesso e erro.
+
+### Tipografia
+
+O sistema possui cinco níveis de tamanhos tipográficos:
+
+- Extra pequeno
+- Pequeno
+- Médio
+- Grande
+- Extra grande
+
+### Espaçamento
+
+Foi criada uma escala modular de espaçamentos por meio de variáveis CSS, utilizada em margens, preenchimentos e espaçamentos entre elementos.
+
+### Layout
+
+Foi utilizado **CSS Grid com 12 colunas** para a estrutura principal e para a organização dos cards de projetos.
+
+O **Flexbox** foi utilizado em componentes que necessitam de alinhamento e distribuição interna, como navegação, formulários e indicadores.
+
+## JavaScript e arquitetura
+
+O JavaScript foi organizado de forma modular, separando as responsabilidades entre os arquivos.
+
+O arquivo **`app.js`** concentra as principais funcionalidades da aplicação, como:
+
+- Templates das páginas.
+- Rotas da aplicação.
+- Renderização dinâmica.
+- Manipulação do DOM.
+- Navegação com History API.
+- Validação do formulário.
+- Máscaras dos campos.
+- Consulta à API ViaCEP.
+- Armazenamento dos cadastros no localStorage.
+
+O arquivo **`script.js`** é responsável pelo comportamento do menu hambúrguer e pela interação do menu em dispositivos menores.
+
+Essa divisão facilita a manutenção, a depuração e a evolução do código.
+
+## Responsividade
+
+O layout possui breakpoints para diferentes tamanhos de tela:
+
+- Desktop
+- Tablet
+- Celular
+
+As estruturas são adaptadas para proporcionar uma experiência adequada em diferentes dispositivos.
+
+## Acessibilidade
+
+Foram aplicadas algumas práticas de acessibilidade, como:
+
+- Textos alternativos nas imagens.
+- Estrutura semântica em HTML5.
+- Indicadores visuais de foco.
+- Contraste adequado entre textos e fundos.
+- Suporte à preferência de redução de movimentos.
+- Campos de formulário associados às respectivas labels.
 
 ## Créditos das imagens
 

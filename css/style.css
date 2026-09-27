@@ -260,14 +260,16 @@ form textarea:hover {
 }
 
 /* VALIDAÇÃO */
-input:valid,
-select:valid {
-        border-color: var(--cor-sucesso);
+input:focus:invalid,
+select:focus:invalid,
+textarea:focus:invalid {
+    border-color: var(--cor-erro);
 }
 
-input:invalid,
-select:invalid {
-        border-color: var(--cor-erro);
+input:focus:valid,
+select:focus:valid,
+textarea:focus:valid {
+    border-color: var(--cor-sucesso);
 }
 
 /* BOTÃO */
